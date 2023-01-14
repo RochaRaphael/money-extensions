@@ -14,16 +14,10 @@ jobs:
     - uses: actions/checkout@main
 
     - name: Set up .NET Core
-<<<<<<< HEAD
-      uses: action/setup-dotnet@v3
-      with:
-        dotnet-version: '6.0.x'
-=======
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '6.0.x'
         dotnet-quality: 'preview'
->>>>>>> 796a14f54411bf8632f32e6ee59a3568e40b10a9
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -35,8 +29,4 @@ jobs:
       run: dotnet pack --configuration Release 
 
     - name: Publish
-<<<<<<< HEAD
-      run: dotnet nuget push "MoneyExtension/bin/Release/*nupkg" -k ${{secrets.NUGET.TOKEN}} -s https://api.nuget.org/v3/index.json
-=======
       run: dotnet nuget push "MoneyExtension/bin/Release/*.nupkg" -k ${{ secrets.NEW_NUGET_TOKEN }} -s https://api.nuget.org/v3/index.json
->>>>>>> 796a14f54411bf8632f32e6ee59a3568e40b10a9
