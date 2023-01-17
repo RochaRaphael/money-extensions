@@ -1,4 +1,4 @@
-namespace MoneyExtension.Tests;
+namespace RochaMoneyExtension.Tests;
 
 [TestClass]
 public class MoneyExtensionTests

@@ -1,4 +1,4 @@
-﻿namespace MoneyExtension;
+﻿namespace RochaMoneyExtension;
 public static class Money
 {
     public static int ToCents(this decimal amount)
