@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 
 
-    <PackadeId>RochaMoneyExtensions</PackadeId>
+    <PackadeId>Rocha_MoneyExtensions</PackadeId>
     <Version>1.0.0</Version>
     <License>MIT</License>
     <Authors> Raphael Rocha</Authors>
